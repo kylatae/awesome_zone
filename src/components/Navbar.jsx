@@ -31,7 +31,7 @@
 //~~~~~~~~~~~~~~~~~~~~~~~MODEL B~~~~~~~~~~~~~~~~~~~~~~
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
-import './navbar.css';
+import './sdfavbar.css';
 
 function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
