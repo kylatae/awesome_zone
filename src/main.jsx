@@ -65,6 +65,7 @@ root.render(
   <BrowserRouter>
     <NavBar /> {/* Render the Navbar at the top */}
     <Routes>
+    <Route path="/" element={<App />} />
     <Route path="/DiceGame" element={<DiceGame />} />
     <Route path="/ConnectFour" element={<ConnectFour />} />
       {/* Add routes for other pages here */}
