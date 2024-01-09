@@ -1,29 +1,24 @@
-.computer-background {
+.computer-container {
     /* Adjust dimensions and position as needed */
   margin: auto;
-  background-image: url('./images/computer/computer-screen.png');
   background-size: contain; /* Or contain, as needed */
   background-repeat: no-repeat;
   width: 70vh; 
-  /* height: 70%; */
   display: flex;
+  top: 0;
   flex-direction: column; /* Or use Grid */
-
-
-}
-.disk-drive {
-    /* Adjust dimensions and position as needed */
-  margin: 100px auto;
-  width: 70%; 
-  display: flex;
-  flex-direction: column; 
+  position: absolute;
+  z-index: -1;
 }
 
 .monitor-area {
   /* Adjust dimensions and position as needed */
   margin:8vw; 
-  left: 100px;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
 }
+
+
+
+
 
