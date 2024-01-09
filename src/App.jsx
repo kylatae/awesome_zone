@@ -77,44 +77,8 @@ function App() {
     window.location.href =`${pageToLoad}`
   };
 
-
-
-  // async function loadPage(pageToLoad) {
-  //   // Fetch content for the page
-  //   const pageContent = await fetch(`${pageToLoad}`);
-  //   const pageHtml = await pageContent.text();
-  
-  //   // Render the page content within the page container
-  //   setPageContent(pageContent);
-  // }
-
-  // Vulnerable to security attacks
-  // async function loadPage(pageToLoad) {
-  //   // Fetch content for the page
-  //   const pageContent = await fetch(`${pageToLoad}`);
-  //   const pageHtml = await pageContent.text();
-  
-  //   // Render the page content within the page container
-  //   setPageContent(pageHtml);
-  // }
-
   return (
-    <div className="computer-container" ref={computerScreenRef}>
-      {/* Computer screen image as background */}
-      <img src="./images/computer/computer-screen.png" alt="Computer Screen" />
-
-      {/* Disk drive element */}
-      <div className="disk-drive" ref={diskDriveRef}>
-        <img src="./images/computer/disk-slot.png" alt="Disk Slot" onDragOver={handleDragOver} onDrop={handleDrop}/>
-      </div>
-
-      {/* Diskette elements (multiple for different pages) */}
-      <Diskette src="./images/computer/diskette-connect-four.png" pageToLoad="./ConnectFour" onDragStart={handleDragStart} />
-      <Diskette src="./images/computer/diskette-dice-game.png" pageToLoad="./DiceGame" onDragStart={handleDragStart} />
-      {/* Below is a way to change the html page but is vulnerable to security attacks */}
-      {/* <div className="page-container">
-       <div dangerouslySetInnerHTML={{ __html: pageContent }} />
-      </div> */}
+    <div>
 
     </div>
   );

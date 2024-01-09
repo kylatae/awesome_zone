@@ -58,17 +58,19 @@ import NavBar from './components/Navbar.jsx'; // Import the Navbar component
 import App from './App.jsx';
 import DiceGame from './components/DiceGame.jsx';
 import ConnectFour from './components/ConnectFour.jsx';
+import ComputerBackground from './components/ComputerBackground';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <NavBar /> {/* Render the Navbar at the top */}
-    <Routes>
-    <Route path="/" element={<App />} />
-    <Route path="/DiceGame" element={<DiceGame />} />
-    <Route path="/ConnectFour" element={<ConnectFour />} />
-      {/* Add routes for other pages here */}
-    </Routes>
+    <ComputerBackground>
+      <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/DiceGame" element={<DiceGame />} />
+      <Route path="/ConnectFour" element={<ConnectFour />} />
+        {/* Add routes for other pages here */}
+      </Routes>
+    </ComputerBackground>
   </BrowserRouter>
 );
